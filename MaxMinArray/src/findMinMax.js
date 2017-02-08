@@ -5,5 +5,4 @@ function findMinMax(arr){
 	var min = arr[0];
 	min == max ? newArray = [max] : newArray = [min, max];
 	return newArray;
-
 }
