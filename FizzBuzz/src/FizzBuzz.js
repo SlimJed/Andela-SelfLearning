@@ -1,16 +1,19 @@
 'use strict';
 
 var myApp = {
+	
 	fizzBuzz: function (num){
+		var answer;
 		if (num % 15 === 0){
-			return "FizzBuzz";
+			answer = "FizzBuzz";
 		}else if(num % 3 === 0){
-			return "Fizz";
+			answer = "Fizz";
 		}else if(num % 5 === 0){
-			return "Buzz";
+			answer = "Buzz";
 		}else {
-			return num;
+			answer = num;
 		}
+		return answer;
 	}
 }
 
