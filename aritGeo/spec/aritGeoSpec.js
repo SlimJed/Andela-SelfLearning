@@ -18,6 +18,10 @@ var myApp = require('../src/aritGeo.js');
         expect(myApp.aritGeo([2, 4, 6, 8, 10])).toEqual('Arithmetic');
       });
 
+      it("should return `Arithmetic` for [1, 3, 5, 7, 9]", function() {
+        expect(myApp.aritGeo([1, 3, 5, 7, 9])).toEqual('Arithmetic');
+      });
+
       it("should return `Arithmetic` for [5, 11, 17, 23, 29, 35, 41]", function() {
         expect(myApp.aritGeo([5, 11, 17, 23, 29, 35, 41])).toEqual('Arithmetic');
       });
@@ -34,6 +38,10 @@ var myApp = require('../src/aritGeo.js');
         expect(myApp.aritGeo([2, 6, 18, 54, 162])).toEqual('Geometric');
       });
 
+      it("should return `Geometric` for [1, 3, 9, 27, 81]", function() {
+        expect(myApp.aritGeo([1, 3, 9, 27, 81])).toEqual('Geometric');
+      });
+
       it("should return `Geometric` for [0.5, 3.5, 24.5, 171.5]", function() {
         expect(myApp.aritGeo([0.5, 3.5, 24.5, 171.5])).toEqual('Geometric');
       });
@@ -48,6 +56,10 @@ var myApp = require('../src/aritGeo.js');
 
       it("should return -1 for [1, 2, 3, 5, 8]", function() {
         expect(myApp.aritGeo([1, 2, 3, 5, 8])).toEqual(-1);
+      });
+
+      it("should return -1 for [1, 3, 4, 66, 89]", function() {
+        expect(myApp.aritGeo([1, 3, 4, 66, 89])).toEqual(-1);
       });
 
       it("should return -1 for [1, 3, 6, 10, 15]", function() {
