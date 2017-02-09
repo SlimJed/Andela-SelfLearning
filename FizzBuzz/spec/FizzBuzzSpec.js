@@ -6,16 +6,32 @@ describe("Fizz Buzz tests ", function() {
     expect(MyApp.fizzBuzz(3)).toBe('Fizz');
   });
 
+  it("should return `Fizz` for number divisible by 3", function() {
+    expect(MyApp.fizzBuzz(27)).toBe('Fizz');
+  });
+
   it("should return `Buzz` for number divisible by 5", function() {
     expect(MyApp.fizzBuzz(5)).toBe('Buzz');
+  });
+
+  it("should return `Buzz` for number divisible by 5", function() {
+    expect(MyApp.fizzBuzz(50)).toBe('Buzz');
   });
 
   it("should return `FizzBuzz` for 15", function() {
     expect(MyApp.fizzBuzz(15)).toBe('FizzBuzz');
   });
 
+  it("should return `FizzBuzz` for 15", function() {
+    expect(MyApp.fizzBuzz(60)).toBe('FizzBuzz');
+  });
+
   it("should return `FizzBuzz` for 45", function() {
     expect(MyApp.fizzBuzz(45)).toBe('FizzBuzz');
+  });
+
+  it("should return `FizzBuzz` for 45", function() {
+    expect(MyApp.fizzBuzz(120)).toBe('FizzBuzz');
   });
 
   it("should return `FizzBuzz` for 90", function() {
