@@ -69,6 +69,10 @@ var myApp = require('../src/aritGeo.js');
       it("should return -1 for [1, 8, 27, 64, 125]", function() {
         expect(myApp.aritGeo([1, 8, 27, 64, 125])).toEqual(-1);
       });
+
+      it("should return -1 for [1,2,3,7,9,10,]", function() {
+        expect(myApp.aritGeo([1,2,3,7,9,10,])).toEqual(-1);
+      });
       
     });
   });
