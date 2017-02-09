@@ -32,11 +32,11 @@ var MyApp = require('../src/findMinMax.js');
       });
 
       it('should return [1] for [1, 1, 1, 1]', function () {
-        expect(MyApp.findMinMax([1, 1, 1, 1])).toEqual([4]);
+        expect(MyApp.findMinMax([1, 1, 1, 1])).toEqual([1]);
       });
 
       it('should return [5] for [5, 5, 5, 5]', function () {
-        expect(MyApp.findMinMax([5, 5, 5, 5])).toEqual([4]);
+        expect(MyApp.findMinMax([5, 5, 5, 5])).toEqual([5]);
       });
 
     });
