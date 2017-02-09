@@ -11,6 +11,10 @@ var MyApp = require('../src/findMinMax.js');
         expect(MyApp.findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
       });
 
+      it('should return [3,78] for [22, 26, 3 , 78]', function () {
+        expect(MyApp.findMinMax([1, 2, 3, 4])).toEqual([1, 4]);
+      });
+
       it('should return [4, 6] for [6, 4]', function () {
         expect(MyApp.findMinMax([6, 4])).toEqual([4, 6]);
       });
@@ -25,6 +29,14 @@ var MyApp = require('../src/findMinMax.js');
 
       it('should return [4] for [4, 4, 4, 4]', function () {
         expect(MyApp.findMinMax([4, 4, 4, 4])).toEqual([4]);
+      });
+
+      it('should return [1] for [1, 1, 1, 1]', function () {
+        expect(MyApp.findMinMax([1, 1, 1, 1])).toEqual([4]);
+      });
+
+      it('should return [5] for [5, 5, 5, 5]', function () {
+        expect(MyApp.findMinMax([5, 5, 5, 5])).toEqual([4]);
       });
 
     });
