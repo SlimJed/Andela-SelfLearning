@@ -1,11 +1,23 @@
-function fizzBuzz(num){
-	if (num % 15 === 0){
-		return "FizzBuzz";
-	}else if(num % 3 === 0){
-		return "Fizz";
-	}else if(num % 5 === 0){
-		return "Buzz";
-	}else {
-		return num;
+'use strict';
+
+var myApp = {
+	fizzBuzz: function (num){
+		if (num % 15 === 0){
+			return "FizzBuzz";
+		}else if(num % 3 === 0){
+			return "Fizz";
+		}else if(num % 5 === 0){
+			return "Buzz";
+		}else {
+			return num;
+		}
 	}
 }
+
+module.exports = myApp;
+
+/*if ( typeof module !== 'undefined' && module.hasOwnProperty('exports') )
+{
+    module.exports = fizzBuzz;
+}*/
+

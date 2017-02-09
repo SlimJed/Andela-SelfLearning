@@ -1,5 +1,5 @@
 function aritGeo(arr){
-	if(arr.length == 0){
+	if(arr.length == 0 || arr == undefined){
 		return 0;
 	}else{
 		var test1 = arr[1] - arr[0];
